@@ -1,0 +1,455 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-size: cover;
+    background-image: url('../img/backgroundacc.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed
+        /*static	Default value. Elements render in order, as they appear in the document flow	
+    absolute	The element is positioned relative to its first positioned (not static) ancestor element	
+    fixed	The element is positioned relative to the browser window	
+    relative	The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position	
+    sticky	The element is positioned based on the user's scroll position
+    A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).*/
+}
+
+header {
+    background-color: rgba(214, 229, 246, 0.902);
+    padding: 0.5em;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+
+
+}
+
+a {
+    color: rgb(115, 14, 14);
+    text-decoration: none;
+    position: relative;
+    transition: 0.4s ease-in-out;
+
+}
+
+nav a:hover {
+    color: midnightblue;
+    background-color: rgb(244, 195, 145, 0.7);
+    padding: 0.5em 0.75em 0.5em 0.75em;
+    border-radius: 2em;
+    transition: 0.3s ease-in-out;
+
+
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em;
+    text-align: center;
+    color: midnightblue;
+    background-color: rgb(244, 195, 145, 0.5);
+    padding: 1em;
+    margin: 0.5em;
+    border-radius: 1em;
+
+
+
+}
+
+footer {
+    color: rgb(115, 14, 14);
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    position: relative;
+
+}
+
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+
+
+
+/* index.html*/
+
+
+
+.video_index {
+
+ 
+    height: 35em;
+    width: 40em;
+
+}
+
+
+h1 {
+    padding: 0.5em;
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: rgb(115, 14, 14)
+}
+
+h2 {
+    padding: 0.5em;
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: darkblue;
+}
+
+
+.lobi {
+    font-size: 2em;
+    background-color:transparent;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+}
+
+.p2 {
+    color: rgb(115, 14, 14);
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+a article:hover {
+    color: midnightblue;
+    background-color: rgba(214, 229, 246, 0.902);
+    padding: 3em;
+    border-radius: 10em;
+    transition: 0.3s ease-in-out;
+
+}
+
+
+/*.gallery figcaption{
+    
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2em;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0.3em;
+    color:maroon;
+    background-color: rgb(244, 195, 145, 0.7);
+    padding: 0.5em;
+    border-radius: 0.75em;
+}*/
+
+
+
+
+
+
+/* art*/
+
+.h2_art {
+    margin-top: 2em;
+
+}
+
+.img_art {
+    padding: 3em;
+    background-color: rgb(244, 195, 145, 0.7);
+    border-radius: 2em;
+}
+
+.video_art {
+    margin-top: 6em;
+    margin-bottom: 4em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 30em;
+    width: 50em;
+
+}
+
+.canvasart {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2em;
+
+}
+
+.wordart {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5em;
+}
+
+.decor1 {
+    position: sticky;
+    float: right;
+    animation: rotation 3s linear infinite;
+}
+
+.decor2 {
+    position: absolute;
+    margin-left: 6em;
+    animation: rotation 3s linear infinite;
+}
+
+
+@keyframes rotation {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    25% {
+        -webkit-transform: rotate(4deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    75% {
+        -webkit-transform: rotate(-5deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+
+
+
+/* Photography*/
+
+
+.container:first-of-type {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.container:first-of-type img {
+
+    margin-top: 6em;
+    margin-left: 4em;
+}
+
+.container:first-of-type p {
+
+    margin: 3em 4em 2em 4em;
+
+
+}
+
+.container:nth-of-type(2) {
+    display: flex;
+    flex-direction: row;
+}
+
+.container:nth-of-type(2) img {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.container:nth-of-type(2) p {
+
+    margin-left: 2em;
+}
+
+.container:nth-of-type(3) {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.container:nth-of-type(3) img {
+
+    margin-left: 4em;
+}
+
+.container:nth-of-type(3) p {
+
+    margin-left: 4em;
+    margin-right: 2em;
+
+}
+
+.container:nth-of-type(4) {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.container:nth-of-type(4) img {
+    margin-left: 2em;
+    margin-right: 2em;
+
+}
+
+.container:nth-of-type(4) p {
+    margin-left: 2em;
+    margin-bottom: 2em;
+
+}
+
+.container p {
+    font-size: 1.75em;
+    padding: 2em 1em 2em 1em;
+    text-align: left;
+
+
+
+
+}
+
+
+
+
+
+/* account*/
+
+
+
+.inl {
+
+    margin-top: 1em;
+    list-style: none;
+}
+
+.inlog_btnlink {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1em;
+    margin-bottom: 2em;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
+
+}
+
+
+input[type=text] {
+    width: 40%;
+    padding: 1em;
+
+}
+
+label {
+    margin-top: 1em;
+    text-transform: capitalize;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkblue;
+}
+
+.button_inloggen {
+    text-transform: capitalize;
+    color: antiquewhite;
+    font-size: 1em;
+    padding: 1em;
+    background-color: darksalmon;
+    border-radius: 1em;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*om schaduw t zetten ondr de knoppen vr demensie8*/
+}
+
+.wwv {
+    margin-left: 2em;
+}
+
+.nieuwacc_tekst {
+    text-transform: capitalize;
+    color: midnightblue;
+    text-align: center;
+    margin-top: 3em;
+}
+
+
+.algemenevoorwaarden {
+
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.algemenevoorwaarden p {
+
+    background-color: transparent;
+    font-size: 1em;
+}
+
+input[type=checkbox] {
+    margin-top: 3em;
+}
+
+.ai {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+.andersinloggen {
+    border-radius: 0.5em;
+    border-color: darkblue;
+    padding: 1em;
+    background-color: antiquewhite;
+    color: midnightblue;
+    font-size: 1em;
+    text-transform: capitalize;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.acc_aanmaken {
+    margin-left: 30%;
+    margin-bottom: 3em;
+    text-transform: capitalize;
+    font-size: 1em;
+    color: antiquewhite;
+    padding: 1em;
+    background-color: darksalmon;
+    border-radius: 1em;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:hover {
+    color: antiquewhite;
+    background-color: maroon;
+    transition: 0.5s;
+}
