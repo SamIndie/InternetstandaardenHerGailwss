@@ -2,8 +2,6 @@
     box-sizing: border-box;
 }
 
-
-
 body {
     background-size: cover;
     background-image: url('../img/backgroundacc.jpeg');
@@ -30,12 +28,11 @@ nav ul {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5em;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2em;
     list-style: none;
     text-decoration: none;
     text-transform: uppercase;
-
 
 }
 
@@ -59,15 +56,13 @@ nav a:hover {
 
 p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 2em;
+    font-size: 3em;
     text-align: center;
     color: midnightblue;
     background-color: rgb(244, 195, 145, 0.5);
     padding: 1em;
     margin: 0.5em;
     border-radius: 1em;
-
-
 
 }
 
@@ -87,7 +82,21 @@ footer ul {
     list-style-type: none;
     justify-content: space-between;
     text-align: center;
+    margin-top: 2em;
 }
+
+video {
+    height: 50em;
+    width: auto;
+
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+   
+}
+
 
 
 
@@ -97,18 +106,10 @@ footer ul {
 
 
 
-.video_index {
-
- 
-    height: 35em;
-    width: 40em;
-
-}
-
 
 h1 {
     padding: 0.5em;
-    font-size: 2em;
+    font-size: 5em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     color: rgb(115, 14, 14)
@@ -116,7 +117,7 @@ h1 {
 
 h2 {
     padding: 0.5em;
-    font-size: 2em;
+    font-size: 3em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     color: darkblue;
@@ -124,24 +125,17 @@ h2 {
 
 
 .lobi {
-    font-size: 2em;
-    background-color:transparent;
+    font-size: 2.5em;
+    background-color: transparent;
 }
 
 .gallery {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     justify-content: space-around;
-    flex-wrap: wrap;
 
 
-}
-
-.p2 {
-    color: rgb(115, 14, 14);
-    font-size: 1.5em;
-    text-align: center;
-    text-transform: capitalize;
 }
 
 a article:hover {
@@ -154,56 +148,19 @@ a article:hover {
 }
 
 
-/*.gallery figcaption{
-    
-    font-family:'Times New Roman', Times, serif;
-    font-size: 2em;
-    text-align: center;
-    text-transform: capitalize;
-    margin: 0.3em;
-    color:maroon;
-    background-color: rgb(244, 195, 145, 0.7);
-    padding: 0.5em;
-    border-radius: 0.75em;
-}*/
-
-
-
 
 
 
 /* art*/
 
-.h2_art {
-    margin-top: 2em;
-
-}
-
-.img_art {
+div img {
     padding: 3em;
     background-color: rgb(244, 195, 145, 0.7);
     border-radius: 2em;
 }
 
-.video_art {
-    margin-top: 6em;
-    margin-bottom: 4em;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    height: 30em;
-    width: 50em;
 
-}
-
-.canvasart {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 2em;
-
-}
-
-.wordart {
+div {
     display: flex;
     justify-content: space-evenly;
     margin-top: 5em;
@@ -250,206 +207,58 @@ a article:hover {
 /* Photography*/
 
 
-.container:first-of-type {
+section {
     width: fit-content;
     display: flex;
     flex-direction: row;
 
 }
+section p {
+    font-size: 2.5em;
+    text-align: left;
+    width: auto;
 
-.container:first-of-type img {
+}
+
+section:first-of-type img {
 
     margin-top: 6em;
     margin-left: 4em;
 }
 
-.container:first-of-type p {
 
-    margin: 3em 4em 2em 4em;
-
-
-}
-
-.container:nth-of-type(2) {
-    display: flex;
-    flex-direction: row;
-}
-
-.container:nth-of-type(2) img {
+section:nth-of-type(2) img {
     margin-left: 2em;
     margin-right: 2em;
 }
 
-.container:nth-of-type(2) p {
-
+section:nth-of-type(2) p {
     margin-left: 2em;
 }
 
-.container:nth-of-type(3) {
-    width: fit-content;
-    display: flex;
-    flex-direction: row;
-}
 
-.container:nth-of-type(3) img {
+
+section:nth-of-type(3) img {
 
     margin-left: 4em;
 }
 
-.container:nth-of-type(3) p {
+section:nth-of-type(3) p {
 
     margin-left: 4em;
     margin-right: 2em;
 
 }
 
-.container:nth-of-type(4) {
-    width: fit-content;
-    display: flex;
-    flex-direction: row;
-}
-
-.container:nth-of-type(4) img {
+section:nth-of-type(4) img {
     margin-left: 2em;
     margin-right: 2em;
 
 }
 
-.container:nth-of-type(4) p {
+section:nth-of-type(4) p {
     margin-left: 2em;
     margin-bottom: 2em;
 
 }
 
-.container p {
-    font-size: 1.75em;
-    padding: 2em 1em 2em 1em;
-    text-align: left;
-
-
-
-
-}
-
-
-
-
-
-/* account*/
-
-
-
-.inl {
-
-    margin-top: 1em;
-    list-style: none;
-}
-
-.inlog_btnlink {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style: none;
-    margin-top: 1em;
-    margin-bottom: 2em;
-
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    margin-left: 40%;
-
-}
-
-
-input[type=text] {
-    width: 40%;
-    padding: 1em;
-
-}
-
-label {
-    margin-top: 1em;
-    text-transform: capitalize;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: darkblue;
-}
-
-.button_inloggen {
-    text-transform: capitalize;
-    color: antiquewhite;
-    font-size: 1em;
-    padding: 1em;
-    background-color: darksalmon;
-    border-radius: 1em;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    /*om schaduw t zetten ondr de knoppen vr demensie8*/
-}
-
-.wwv {
-    margin-left: 2em;
-}
-
-.nieuwacc_tekst {
-    text-transform: capitalize;
-    color: midnightblue;
-    text-align: center;
-    margin-top: 3em;
-}
-
-
-.algemenevoorwaarden {
-
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-.algemenevoorwaarden p {
-
-    background-color: transparent;
-    font-size: 1em;
-}
-
-input[type=checkbox] {
-    margin-top: 3em;
-}
-
-.ai {
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-    margin-top: 2em;
-    margin-bottom: 3em;
-}
-
-.andersinloggen {
-    border-radius: 0.5em;
-    border-color: darkblue;
-    padding: 1em;
-    background-color: antiquewhite;
-    color: midnightblue;
-    font-size: 1em;
-    text-transform: capitalize;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-}
-
-.acc_aanmaken {
-    margin-left: 30%;
-    margin-bottom: 3em;
-    text-transform: capitalize;
-    font-size: 1em;
-    color: antiquewhite;
-    padding: 1em;
-    background-color: darksalmon;
-    border-radius: 1em;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-button:hover {
-    color: antiquewhite;
-    background-color: maroon;
-    transition: 0.5s;
-}
