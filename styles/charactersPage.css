@@ -1,0 +1,152 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #e60012;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+  }
+  
+  header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .hero h2 {
+    color: #e60012;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Games Section */
+  .games, .characters {
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .games h2, .characters h2 {
+    text-align: center;
+    color: #e60012;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .games-grid, .characters .games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .game-card {
+    text-align: center;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+  }
+  
+  .game-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+  }
+  
+  .game-card h3 {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .game-card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .game-card a {
+    display: inline-block;
+    background-color: #e60012;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+  
+  footer h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  footer ul li img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+  }
+  
